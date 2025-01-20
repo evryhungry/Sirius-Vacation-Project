@@ -1,0 +1,57 @@
+# macOS 시스템 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Unity 불필요한 폴더 제외
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+
+# Unity 프로젝트 설정 파일 (필요하면 포함 가능)
+# [Aa]ssets/**/*.meta
+# [Pp]rojectSettings/
+# [Uu]serSettings/
+
+# Visual Studio / Rider 관련
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln*
+*.user
+*.csproj
+*.pidb
+*.svd
+*.pdb
+*.cache
+*.bak
+
+# Unity 빌드 파일 (추후 Git LFS 고려 가능)
+[Bb]uilds/
+[Bb]uild/
+
+# Git LFS로 관리할 대용량 파일 예시
+# git lfs track "*.psd"
+# git lfs track "Library/PackageCache/**/*.dylib"
+
+# Log files
+[Ll]ogs/
+*.log
+*.tlog
+*.trace
+*.app.bundle
+
+# Crash reports
+crashlytics-build-id
+*.crash
+*.dmp
