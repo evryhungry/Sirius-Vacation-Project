@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Wall_Collision : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Rigidbody2D rb;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         
@@ -21,6 +20,8 @@ public class Wall_Collision : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             Debug.Log("벽에 닿음!");
+            float speed = rb.velocity.magnitude; // 현재 속도 계산
+            Debug.Log($"현재 속도: {speed}");
         }
     }
 }
