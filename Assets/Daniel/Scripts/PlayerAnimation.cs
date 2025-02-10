@@ -75,8 +75,17 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    public void CastDeath()
+    void CastDeath()
     {
-        playeranimator.SetTrigger("DeathCast");
+        isDamaged = true;
+        playeranimator.SetBool("Damaged", isDamaged);
+
+        Invoke(nameof(EnableMovement), 1f); 
+    }
+
+    void EnableMovement()
+    {
+        isDamaged = false;
+        playeranimator.SetBool("Damaged", isDamaged);
     }
 }
